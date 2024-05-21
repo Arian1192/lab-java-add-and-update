@@ -61,10 +61,10 @@ Create the following routes as efficiently as possible, using validation where a
 5. **Update patient information**: Create a route to update patient information (the user should be able to update any patient information through this route).
 6. **Write a short answer in README.md**. In your `README.md`, write a short answer to the following questions:
 
-   - Did you use the same type of route to update patient information as to update an employee's department?
-   - Why did you choose the selected strategy?
-   - What are the advantages and disadvantages of the strategies you chose for creating these routes?
-   - What is the cost-benefit between using `PUT` and `PATCH`?
+    - Did you use the same type of route to update patient information as to update an employee's department?
+    - Why did you choose the selected strategy?
+    - What are the advantages and disadvantages of the strategies you chose for creating these routes?
+    - What is the cost-benefit between using `PUT` and `PATCH`?
 
 <br>  
 
@@ -77,11 +77,11 @@ Create the following routes as efficiently as possible, using validation where a
 
   <br> <!-- ✅ -->
 
-  If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear, straight forward question about the specific issue you are facing. The process you will go through while trying to define this question, will help you narrow down the problem and come up with potential solutions.
+If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear, straight forward question about the specific issue you are facing. The process you will go through while trying to define this question, will help you narrow down the problem and come up with potential solutions.
 
-  For example, are you facing a problem because you don't understand the concept or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources.
+For example, are you facing a problem because you don't understand the concept or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources.
 
-  Once you have a clear understanding of the problem, you should be able to start working toward the solution.
+Once you have a clear understanding of the problem, you should be able to start working toward the solution.
 
   <br>
 
@@ -96,15 +96,15 @@ Create the following routes as efficiently as possible, using validation where a
 
   <br> <!-- ✅ -->
 
-  Spring boot is a framework for creating stand-alone, production-grade applications that are easy to launch and run. The best way to create a Spring boot project is to use the Spring Initializer website. The website provides a convenient way to generate a basic project structure with all the necessary dependencies and configurations.
+Spring boot is a framework for creating stand-alone, production-grade applications that are easy to launch and run. The best way to create a Spring boot project is to use the Spring Initializer website. The website provides a convenient way to generate a basic project structure with all the necessary dependencies and configurations.
 
-  - Step 1: Go to [start.spring.io](https://start.spring.io/)
-  - Step 2: Choose the type of project you want to create, such as Maven or Gradle.
-  - Step 3: Select the version of Spring Boot you want to use.
-  - Step 4: Choose the dependencies you need for your project. Some common dependencies include web, jpa and data-jpa.
-  - Step 5: Click the "Generate" button to download the project files.
+- Step 1: Go to [start.spring.io](https://start.spring.io/)
+- Step 2: Choose the type of project you want to create, such as Maven or Gradle.
+- Step 3: Select the version of Spring Boot you want to use.
+- Step 4: Choose the dependencies you need for your project. Some common dependencies include web, jpa and data-jpa.
+- Step 5: Click the "Generate" button to download the project files.
 
-  Alternatively, you can use an Integrated Development Environment (IDE) such as Eclipse or IntelliJ IDEA. These IDEs have plugins for creating Spring boot projects, making it easy to set up the environment and get started with coding.
+Alternatively, you can use an Integrated Development Environment (IDE) such as Eclipse or IntelliJ IDEA. These IDEs have plugins for creating Spring boot projects, making it easy to set up the environment and get started with coding.
 
   <br>
 
@@ -149,15 +149,15 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  The `@Entity`, `@Table` and `@Column` annotations in JPA (Java Persistence API) are used to map Java objects to relational database tables.
+The `@Entity`, `@Table` and `@Column` annotations in JPA (Java Persistence API) are used to map Java objects to relational database tables.
 
-  `@Entity` is used to mark a class as a persistent entity. This means that instances of the class can be stored in a database.
+`@Entity` is used to mark a class as a persistent entity. This means that instances of the class can be stored in a database.
 
-  `@Table` is used to define the name of the database table that the entity will be mapped to.
+`@Table` is used to define the name of the database table that the entity will be mapped to.
 
-  `@Column` is used to define the columns in the table that correspond to the attributes of the entity.
+`@Column` is used to define the columns in the table that correspond to the attributes of the entity.
 
-  Here is an example of how to use these annotations:
+Here is an example of how to use these annotations:
 
   ```java
   @Entity
@@ -179,7 +179,7 @@ public class Employee {
   }
   ```
 
-  In this example, the `Employee` class is marked as a persistent entity using the `@Entity` annotation. The name of the database table is defined using the `@Table` annotation as "employee". The `id`, `firstName` and `lastName` attributes are mapped to columns in the "employee" table using the `@Column` annotation.
+In this example, the `Employee` class is marked as a persistent entity using the `@Entity` annotation. The name of the database table is defined using the `@Table` annotation as "employee". The `id`, `firstName` and `lastName` attributes are mapped to columns in the "employee" table using the `@Column` annotation.
 
 </details>
 
@@ -190,13 +190,13 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  The `@RestController` annotation is used in Java to define a class as a RESTful web service controller. This annotation allows the class to handle HTTP requests and return HTTP responses.
+The `@RestController` annotation is used in Java to define a class as a RESTful web service controller. This annotation allows the class to handle HTTP requests and return HTTP responses.
 
-  The `@GetMapping` annotation is used to map a specific HTTP GET request to a method in a controller class. This allows the method to handle the request and return a response.
+The `@GetMapping` annotation is used to map a specific HTTP GET request to a method in a controller class. This allows the method to handle the request and return a response.
 
-  The `@ResponseStatus` annotation is used to set the HTTP status code for the response returned by a method in a controller class.
+The `@ResponseStatus` annotation is used to set the HTTP status code for the response returned by a method in a controller class.
 
-  Here's a code snippet showing how to use these annotations in Java:
+Here's a code snippet showing how to use these annotations in Java:
 
   ```java
   import org.springframework.web.bind.annotation.GetMapping;
@@ -215,7 +215,7 @@ public class Employee {
   }
   ```
 
-  In this example, the `ExampleController` class is defined as a RESTful web service controller using the `@RestController` annotation. The `exampleMethod` is mapped to a specific HTTP GET request using the `@GetMapping("/example")` annotation and the HTTP status code for the response is set to `HTTP 200 OK` using the `@ResponseStatus(HttpStatus.OK)` annotation.
+In this example, the `ExampleController` class is defined as a RESTful web service controller using the `@RestController` annotation. The `exampleMethod` is mapped to a specific HTTP GET request using the `@GetMapping("/example")` annotation and the HTTP status code for the response is set to `HTTP 200 OK` using the `@ResponseStatus(HttpStatus.OK)` annotation.
 
   <br>
 
@@ -229,15 +229,15 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  The `@RestController`, `@PostMapping`, `@PutMapping`, `@PatchMapping` and `@ResponseStatus` annotations are used in Java for building RESTful web services.
+The `@RestController`, `@PostMapping`, `@PutMapping`, `@PatchMapping` and `@ResponseStatus` annotations are used in Java for building RESTful web services.
 
-  The `@RestController` annotation is used to denote that a class serves as a REST controller. This means that the class will handle HTTP requests and provide responses in a RESTful manner.
+The `@RestController` annotation is used to denote that a class serves as a REST controller. This means that the class will handle HTTP requests and provide responses in a RESTful manner.
 
-  The `@PostMapping`, `@PutMapping` and `@PatchMapping` annotations are used to handle HTTP POST, PUT and PATCH requests respectively. These annotations are used to specify the endpoint that will handle the respective request type.
+The `@PostMapping`, `@PutMapping` and `@PatchMapping` annotations are used to handle HTTP POST, PUT and PATCH requests respectively. These annotations are used to specify the endpoint that will handle the respective request type.
 
-  The `@ResponseStatus` annotation is used to set the HTTP response status code.
+The `@ResponseStatus` annotation is used to set the HTTP response status code.
 
-  Here is an example of how these annotations can be used:
+Here is an example of how these annotations can be used:
 
   ```java
   @RestController
@@ -266,7 +266,7 @@ public class Employee {
   }
   ```
 
-  In this example, the `@RestController` annotation is applied to the class `MyController`, indicating that it serves as a REST controller. The `@PostMapping`, `@PutMapping` and `@PatchMapping` annotations are used to handle HTTP POST, PUT and PATCH requests respectively. The `@ResponseStatus` annotation is used to set the HTTP response status code to `HttpStatus.CREATED`, `HttpStatus.OK`, or `HttpStatus.OK` respectively.
+In this example, the `@RestController` annotation is applied to the class `MyController`, indicating that it serves as a REST controller. The `@PostMapping`, `@PutMapping` and `@PatchMapping` annotations are used to handle HTTP POST, PUT and PATCH requests respectively. The `@ResponseStatus` annotation is used to set the HTTP response status code to `HttpStatus.CREATED`, `HttpStatus.OK`, or `HttpStatus.OK` respectively.
 
 </details> 
 
@@ -275,9 +275,9 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  The `@NotEmpty`, `@Pattern` and `@Digits` annotations in Java are used to validate the input values of a form or a request body. These annotations are used to make sure that the input values are not empty, match a specific pattern, or have a specific number of digits.
+The `@NotEmpty`, `@Pattern` and `@Digits` annotations in Java are used to validate the input values of a form or a request body. These annotations are used to make sure that the input values are not empty, match a specific pattern, or have a specific number of digits.
 
-  Here's a code snippet that demonstrates the use of these annotations:
+Here's a code snippet that demonstrates the use of these annotations:
 
   ```java
   public class User {
@@ -295,7 +295,7 @@ public class Employee {
   }
   ```
 
-  In the above code, the `name` field must not be empty, the `email` field must match the specified email pattern and the `contactNumber` field must have 5 digits. If any of these conditions are not met, a message will be displayed to the user.
+In the above code, the `name` field must not be empty, the `email` field must match the specified email pattern and the `contactNumber` field must have 5 digits. If any of these conditions are not met, a message will be displayed to the user.
 
 </details>
 
@@ -306,9 +306,9 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  The `@JsonIgnore` annotation is used in Jackson (a popular library for JSON processing) to ignore a property when serializing or deserializing an object to/from JSON. This means that when the object is converted to JSON, the property marked with `@JsonIgnore` will not be included in the JSON representation.
+The `@JsonIgnore` annotation is used in Jackson (a popular library for JSON processing) to ignore a property when serializing or deserializing an object to/from JSON. This means that when the object is converted to JSON, the property marked with `@JsonIgnore` will not be included in the JSON representation.
 
-  The `@JsonIgnore` annotation is applied to a property in a Java class to ignore it during JSON serialization or deserialization. For example, consider a class named Employee with a property named "password". To ignore the "password" property, we can annotate it with `@JsonIgnore`:
+The `@JsonIgnore` annotation is applied to a property in a Java class to ignore it during JSON serialization or deserialization. For example, consider a class named Employee with a property named "password". To ignore the "password" property, we can annotate it with `@JsonIgnore`:
 
   ```java
   public class Employee {
@@ -321,7 +321,7 @@ public class Employee {
   }
   ```
 
-  When this class is serialized to JSON, the "password" property will not be included in the JSON representation.
+When this class is serialized to JSON, the "password" property will not be included in the JSON representation.
 
 </details>
 
@@ -332,17 +332,17 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  `JpaRepository` is a Spring Data interface that extends the `PagingAndSortingRepository` interface. It provides all the basic **CRUD (Create, Read, Update, Delete)** operations and additional methods to work with **JPA (Java Persistence API)** to interact with the database.
+`JpaRepository` is a Spring Data interface that extends the `PagingAndSortingRepository` interface. It provides all the basic **CRUD (Create, Read, Update, Delete)** operations and additional methods to work with **JPA (Java Persistence API)** to interact with the database.
 
-  To use `JpaRepository` in your project, follow the below steps:
+To use `JpaRepository` in your project, follow the below steps:
 
-  Step 1: Import the necessary libraries
+Step 1: Import the necessary libraries
 
   ```java
   import org.springframework.data.jpa.repository.JpaRepository;
   ```
 
-  Step 2: Create an interface that extends `JpaRepository`
+Step 2: Create an interface that extends `JpaRepository`
 
   ```java
   public interface MyRepository extends JpaRepository<MyEntity, Long> {
@@ -350,23 +350,23 @@ public class Employee {
   }
   ```
 
-  **Note**: In the above code, `MyEntity` is the entity class that you want to interact with the database and Long is the type of the primary key of `MyEntity`.
+**Note**: In the above code, `MyEntity` is the entity class that you want to interact with the database and Long is the type of the primary key of `MyEntity`.
 
-  Step 3: Inject the interface in the class where you want to use it.
+Step 3: Inject the interface in the class where you want to use it.
 
   ```java
   @Autowired
   private MyRepository myRepository;
   ```
 
-  Step 4: You can now use the methods provided by `JpaRepository` to interact with the database, for example:
+Step 4: You can now use the methods provided by `JpaRepository` to interact with the database, for example:
 
   ```java
   MyEntity myEntity = new MyEntity();
   myRepository.save(myEntity);
   ```
 
-  With the above steps, you can now use `JpaRepository` to interact with the database in your Java project.
+With the above steps, you can now use `JpaRepository` to interact with the database in your Java project.
 
 </details>
 
@@ -376,12 +376,12 @@ public class Employee {
   <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">What are derived query methods in JPA and how do I use them in Java?</summary>
 
   <br> <!-- ✅ -->
-  
-  Derived query methods in JPA are methods in a JPA repository that are automatically generated by the framework based on method names. These methods allow developers to perform common database operations such as finding entities based on specific criteria, sorting, pagination and more, without having to manually write the corresponding SQL query.
 
-  To use derived query methods in Java with JPA, follow these steps:
+Derived query methods in JPA are methods in a JPA repository that are automatically generated by the framework based on method names. These methods allow developers to perform common database operations such as finding entities based on specific criteria, sorting, pagination and more, without having to manually write the corresponding SQL query.
 
-  1. Create a JPA repository interface: To start, create an interface that extends `JpaRepository` and specifies the entity class and the primary key data type. For example:
+To use derived query methods in Java with JPA, follow these steps:
+
+1. Create a JPA repository interface: To start, create an interface that extends `JpaRepository` and specifies the entity class and the primary key data type. For example:
 
     ```java
     import org.springframework.data.jpa.repository.JpaRepository;
@@ -391,13 +391,13 @@ public class Employee {
     }
     ```
 
-   2. Define the method name: Next, you can define the method name based on the query you want to perform. There are several conventions that JPA follows to determine the query to be executed, such as keywords such as `findBy`, `readBy`, `queryBy`, `countBy` and `deleteBy`, followed by the name of the entity’s properties. For example, to find all users with a specific first name, you can define the method name as follows:
+2. Define the method name: Next, you can define the method name based on the query you want to perform. There are several conventions that JPA follows to determine the query to be executed, such as keywords such as `findBy`, `readBy`, `queryBy`, `countBy` and `deleteBy`, followed by the name of the entity’s properties. For example, to find all users with a specific first name, you can define the method name as follows:
 
     ```java
     List<User> findByFirstName(String firstName);
     ```
 
-   3. Inject the repository: Finally, you can inject the repository into your service or component class and call the methods to perform the query operations.
+3. Inject the repository: Finally, you can inject the repository into your service or component class and call the methods to perform the query operations.
 
     ```java
     @Autowired
@@ -408,18 +408,18 @@ public class Employee {
     }
     ```
 
-  **Note**: The exact implementation of derived query methods may vary depending on the JPA implementation you are using (e.g., Hibernate, EclipseLink, etc.). However, the basic concept of using method names to generate queries remains the same.
+**Note**: The exact implementation of derived query methods may vary depending on the JPA implementation you are using (e.g., Hibernate, EclipseLink, etc.). However, the basic concept of using method names to generate queries remains the same.
 
 </details>
-  
+
 <details>
   <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">How can I use the JPA annotations "@OneToOne", "@OneToMany", "@ManyToOne", "@ManyToMany", "@JoinColumn" and "@JoinTable" in Java?</summary>
 
   <br> <!-- ✅ -->
 
-  The Java Persistence API (JPA) provides several annotations for mapping relationships between entities in Java applications. These annotations include:
+The Java Persistence API (JPA) provides several annotations for mapping relationships between entities in Java applications. These annotations include:
 
-  1. **@OneToOne**: This annotation is used to define a one-to-one relationship between two entities. The following code shows how to use the `@OneToOne` annotation:
+1. **@OneToOne**: This annotation is used to define a one-to-one relationship between two entities. The following code shows how to use the `@OneToOne` annotation:
 
    ```java
    @Entity
@@ -453,9 +453,9 @@ public class Employee {
    }
    ```
 
-  2. **@OneToMany & @ManyToOne**: These annotations are used to define one-to-many and many-to-one relationships between two entities.
+2. **@OneToMany & @ManyToOne**: These annotations are used to define one-to-many and many-to-one relationships between two entities.
 
-   The following code shows how to use the `@OneToMany` and the `@ManyToOne` annotation:
+The following code shows how to use the `@OneToMany` and the `@ManyToOne` annotation:
 
    ```java
    @Entity
@@ -490,13 +490,13 @@ public class Employee {
    }
    ```
 
-  3. **@ManyToMany & @JoinColumn & @JoinTable**: The `@ManyToMany` annotation is used in Java to define a many-to-many relationship between two entities. This means that multiple instances of one entity can be related to multiple instances of another entity.
+3. **@ManyToMany & @JoinColumn & @JoinTable**: The `@ManyToMany` annotation is used in Java to define a many-to-many relationship between two entities. This means that multiple instances of one entity can be related to multiple instances of another entity.
 
-   The `@JoinColumn` annotation is used in Java to specify the foreign key column that will be used to join the two entities. The foreign key column is used to establish a relationship between the entities.
+The `@JoinColumn` annotation is used in Java to specify the foreign key column that will be used to join the two entities. The foreign key column is used to establish a relationship between the entities.
 
-   The `@JoinTable` annotation is used in Java to define a join table for a many-to-many relationship. The join table is used to store the relationship information between the two entities.
+The `@JoinTable` annotation is used in Java to define a join table for a many-to-many relationship. The join table is used to store the relationship information between the two entities.
 
-   The following code shows how to use the `@ManyToMany`, `@JoinColumn` and `@JoinTable` annotations:
+The following code shows how to use the `@ManyToMany`, `@JoinColumn` and `@JoinTable` annotations:
 
    ```java
    @Entity
@@ -526,24 +526,24 @@ public class Employee {
 
   <br> <!-- ✅ -->
 
-  If you are unable to push changes to your repository, here are a few steps that you can follow:
+If you are unable to push changes to your repository, here are a few steps that you can follow:
 
-  1. Check your internet connection: Ensure that your internet connection is stable and working.
-  1. Verify your repository URL: Make sure that you are using the correct repository URL to push your changes.
-  2. Check Git credentials: Ensure that your Git credentials are up-to-date and correct. You can check your credentials using the following command:
+1. Check your internet connection: Ensure that your internet connection is stable and working.
+1. Verify your repository URL: Make sure that you are using the correct repository URL to push your changes.
+2. Check Git credentials: Ensure that your Git credentials are up-to-date and correct. You can check your credentials using the following command:
 
   ```bash
   git config --list
   ```
 
-  4. Update your local repository: Before pushing changes, make sure that your local repository is up-to-date with the remote repository. You can update your local repository using the following command:
+4. Update your local repository: Before pushing changes, make sure that your local repository is up-to-date with the remote repository. You can update your local repository using the following command:
 
   ```bash
   git fetch origin
   ```
 
-  5. Check for conflicts: If there are any conflicts between your local repository and the remote repository, resolve them before pushing changes.
-  6. Push changes: Once you have resolved any conflicts and updated your local repository, you can try pushing changes again using the following command:
+5. Check for conflicts: If there are any conflicts between your local repository and the remote repository, resolve them before pushing changes.
+6. Push changes: Once you have resolved any conflicts and updated your local repository, you can try pushing changes again using the following command:
 
   ```bash
   git push origin <branch_name>
